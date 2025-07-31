@@ -30,12 +30,12 @@ android {
     ndkVersion flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_19
+        targetCompatibility JavaVersion.VERSION_19
     }
 
     kotlinOptions {
-        jvmTarget = '1.7'
+        jvmTarget = '19'
     }
 
     sourceSets {
