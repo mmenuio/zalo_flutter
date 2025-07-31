@@ -33,13 +33,13 @@ android {
     compileSdkVersion 34
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_19
+        targetCompatibility JavaVersion.VERSION_19
     }
 
-    // kotlinOptions {
-    //     jvmTarget = '17'
-    // }
+    kotlinOptions {
+        jvmTarget = '19'
+    }
     
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -48,10 +48,6 @@ android {
         minSdkVersion 21
         targetSdkVersion 34
     }
-}
-
-kotlin {
-    jvmToolchain(17)
 }
 
 dependencies {
